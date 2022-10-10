@@ -1,0 +1,8 @@
+.borderPane{
+    -fx-background-color: #ffffff;
+    -fx-border: solid 5;
+    -fx-border-radius: 15;
+}
+.anchorPane{
+    -fx-background-color: linear-gradient ;
+}

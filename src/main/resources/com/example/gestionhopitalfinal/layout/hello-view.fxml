@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="1080.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionhopitalfinal.controller.HelloController">
+   <top>
+      <AnchorPane fx:id="anchorPane" prefHeight="65.0" prefWidth="1080.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="987.0" layoutY="24.0" prefHeight="18.0" prefWidth="79.0" text="wolf" />
+            <Circle layoutX="943.0" layoutY="31.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.11999999731779099" green="0.9495635628700256" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color green="0.179824560880661" blue="0.5394737124443054" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Circle layoutX="37.0" layoutY="32.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.11999999731779099" blue="0.6773333549499512" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.48044365644454956" green="0.22100000083446503" blue="0.8500000238418579" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Label layoutX="72.0" layoutY="23.0" prefHeight="18.0" prefWidth="111.0" text="Wolvs Hospital" />
+            <TextField fx:id="textField" layoutX="391.0" layoutY="20.0" prefHeight="26.0" prefWidth="258.0" promptText="Research..." />
+            <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="374.0" layoutY="20.0" opacity="0.67" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/search.png" />
+               </image>
+            </ImageView>
+            <JFXButton contentDisplay="RIGHT" layoutX="685.0" layoutY="18.0" prefHeight="30.0" prefWidth="173.0" text="    Create Documentation">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.800000011920929" green="0.5843137502670288" blue="0.7529411911964417" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8588235378265381" green="0.8313725590705872" blue="0.7058823704719543" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <ImageView fitHeight="26.0" fitWidth="28.0" layoutX="686.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/add.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <HBox fx:id="hbox" prefHeight="573.0" prefWidth="334.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="vboxLeft" prefHeight="573.0" prefWidth="60.0">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/menu_vertical_50px.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="15.0" top="30.0" />
+                     </VBox.margin></ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/member_50px.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="15.0" top="45.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/chat_24px.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="15.0" top="40.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/notification_24px.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="15.0" top="55.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="btnExit" fitHeight="24.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/sign_out_50px.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="15.0" top="250.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children></VBox>
+            <ScrollPane prefHeight="573.0" prefWidth="268.0">
+               <content>
+                  <VBox prefHeight="571.0" prefWidth="264.0">
+                     <children>
+                        <Pane fx:id="paneDesc" prefHeight="63.0" prefWidth="275.0" style="-fx-background-color: #d1d1d1;">
+                           <children>
+                              <Label layoutX="28.0" layoutY="23.0" text="Patient ">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="167.0" layoutY="26.0" text="Recent.">
+                                 <font>
+                                    <Font name="Century Gothic" size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <effect>
+                              <DropShadow blurType="TWO_PASS_BOX">
+                                 <color>
+                                    <Color red="0.21052631735801697" green="0.21052631735801697" blue="0.21052631735801697" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+   </left>
+   <center>
+      <Pane fx:id="paneCenter" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TabPane fx:id="tabPane" layoutX="12.0" layoutY="131.0" prefHeight="432.0" prefWidth="719.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab fx:id="tabAbout" text="About">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="301.0" prefWidth="577.0" style="-fx-background-color: #ffffff;" />
+                  </content>
+                </Tab>
+                  <Tab fx:id="tabDoc" text="Documentation">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="301.0" prefWidth="577.0" style="-fx-background-color: #ffffff;" />
+                     </content>
+                  </Tab>
+                <Tab fx:id="tabCal" text="Calandar">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" />
+                  </content>
+                </Tab>
+                  <Tab fx:id="tabVisit" text="Visit Frequancy">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" />
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+            <Circle layoutX="74.0" layoutY="53.0" radius="41.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.9529822468757629" blue="0.11999999731779099" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.40046295523643494" green="1.0" blue="0.02777777798473835" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Circle>
+            <Label layoutX="121.0" layoutY="41.0" prefHeight="25.0" prefWidth="146.0" text="Patient Name" />
+            <Label layoutX="121.0" layoutY="62.0" prefHeight="19.0" prefWidth="123.0" text="informations about p">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </center>
+   <effect>
+      <DropShadow />
+   </effect>
+</BorderPane>
